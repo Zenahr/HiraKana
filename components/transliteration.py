@@ -25,9 +25,9 @@ class Transliterator:
     def show(self):
         print(self.output)
 
-    def write_to_file(self, filename, callback):
+    def write_to_file(self, filename, string):
         with open(filename, "w") as file:
-            file.write(callback)
+            file.write(string)
             file.close()
 
 
