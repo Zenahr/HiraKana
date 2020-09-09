@@ -144,7 +144,10 @@ hiragana_input = """むかしむかしそのまたむかし海べの村に
 うらしまたろうはたちまちおじいさんの
 すがたになってしまいました。"""
 
-print(hiragana_input)
+transliterator = tl()
+katakana = transliterator.hiragana_to_katakana(hiragana_input)
+transliterator.show()
+
 with open("test.txt", "w") as file:
-    file.write(hiragana_input)
-    # file.close()
+    file.write(katakana)
+    file.close()
