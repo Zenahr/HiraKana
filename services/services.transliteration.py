@@ -18,9 +18,11 @@ class Transliterator:
 
     def hiragana_to_katakana(self):
         self.output = self.input.translate(self.hiragana_to_katakana_table)
+        return self.output
 
     def katakana_to_hiragana(self):
         self.output = self.input.translate(self.katakana_to_hiragana_table)
+        return self.output
 
     def show(self):
         print("RESULT:", self.output)
