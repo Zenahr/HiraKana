@@ -1,6 +1,4 @@
-from components.transliteration import Transliterator as tl
-
-hiragana_input = """むかしむかしそのまたむかし海べの村に
+むかしむかしそのまたむかし海べの村に
 うらしまたろうというわかものがおかあさんと
 ふたりですんでいました。
 ある日いつものようにさかなつりにでかけたら、
@@ -142,9 +140,4 @@ hiragana_input = """むかしむかしそのまたむかし海べの村に
 やくそくをやぶってたまてばこのふたをあけました。
 そのとたんはこのなかから白いけむりがでて、
 うらしまたろうはたちまちおじいさんの
-すがたになってしまいました。"""
-
-print(hiragana_input)
-with open("test.txt", "w") as file:
-    file.write(hiragana_input)
-    # file.close()
+すがたになってしまいました。
