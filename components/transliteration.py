@@ -25,6 +25,12 @@ class Transliterator:
     def show(self):
         print(self.output)
 
+    def write_to_file(self, filename, callback):
+        with open(filename, "w") as file:
+            file.write(callback)
+            file.close()
+
+
 # Testing Zone --------------------------------------------------------------------------------------
 
 # With the 4 lines defining our translations tables we can now easily translate between hiragana and katakana
