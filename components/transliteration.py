@@ -25,12 +25,18 @@ class Transliterator:
         return self.output
 
     def show(self):
-        print("RESULT:", self.output)
+        print(self.output)
 
 # Testing Zone --------------------------------------------------------------------------------------
 
-obj = Transliterator("TESTSTRING")
+# With the 4 lines defining our translations tables we can now easily translate between hiragana and katakana
+# mixed_string = 'きゃりーぱみゅぱみゅは日本の歌手です。'
+# print(mixed_string.translate(hiragana_to_katakana))
+# print(mixed_string.translate(hiragana_to_katakana).translate(katakana_to_hiragana))
+# out: きゃりーぱみゅぱみゅは日本の歌手です。
+
+obj = Transliterator('きゃりーぱみゅぱみゅは日本の歌手です。')
+obj.hiragana_to_katakana()
 obj.show()
-print(obj.hiragana_to_katakana())
-obj.hiragana_to_katakana
+obj.katakana_to_hiragana()
 obj.show()
